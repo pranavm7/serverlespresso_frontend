@@ -15,7 +15,7 @@ export default function DrinkCard(props: { drink: Drink }) {
   return (
     <li
       key={props.drink.id}
-      className="bg-blue-500 p-6 cursor-pointer hover:bg-red-300 transition"
+      className="backdrop-blur-md p-6 cursor-pointer hover:bg-red-300 transition"
       onClick={() => {
         setSelected(true);
       }}

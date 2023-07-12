@@ -13,11 +13,8 @@ export default async function Catalog() {
   const data: Drink[] = await result.json();
 
   return (
-    <main className="py-20">
+    <main className="py-20 z-0" style={{ backgroundImage: "url(/bg.jpg)" }}>
       <h1 className="text-6xl text-center mb-20">Menu</h1>
-
-      {/* <div className="h-screen w-screen backdrop-blur-sm fixed top-0 "></div> */}
-
       <ul className="grid grid-cols-3 gap-20 mx-60">
         {data.map((drink) => (
           <DrinkCard drink={drink} key={drink.id}></DrinkCard>
